@@ -1,0 +1,11 @@
+name: PingHB
+version: '1.0'
+main: hubism4.PingPlugin
+api-version: 1.16
+author: HubiSm4#0001
+website: hubism4.xyz
+description: Wyrzuca z serwera graczy, powyżej określonej ilości pingu.
+commands:
+  ping:
+    aliases:
+      - opoznienie

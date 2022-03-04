@@ -1,0 +1,4 @@
+hubism4\PingPlugin.class
+hubism4\utils\ChatUtil.class
+hubism4\runnable\PingRunnable.class
+hubism4\command\PingCmd.class

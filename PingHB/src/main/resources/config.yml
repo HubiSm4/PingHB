@@ -1,0 +1,57 @@
+
+# NAME: PingHB
+# VERSION: 1.0
+
+# AUTHOR: HubiSm4_
+# DISCORD: HubiSm4#0001
+
+# GITHUB: https://github.com/HubiSm4
+# WEBSITE: https://hubism4.xyz
+
+# PL // ENG
+
+# Proszę o zgłaszanie mi wszystkich błędów poprzez discorda. // Please report to me all bugs using discord.
+
+# Prefix używany we wszystkich wiadomościach systemowych. Jeśli nie chcesz używać prefixu wpisz "".
+# Prefix used in all system messages. If you don't want to use prefix enter "".
+info_prefix: "&c[PingHB]&7"
+
+# Czy plugin ma wyrzucać graczy powyżej określonego pingu? // Should the plugin kick players above a certain ping?
+kicking_enabled: true
+
+# Największy dozwolony ping // Highest allowed ping
+max_ping: 150
+
+# Częstotliwość sprawdzania pingu (Podana w sekundach) // Frequency of ping check (Given in seconds)
+check_time: 60
+
+# Wiadomości // Messages
+
+# [ %prefix%, %player%, %ping%, %max_ping%, %permission_use%, %permission_reload% ]
+
+# 1. Wygląd komendy /ping // /ping command view
+# 2. Wygląd komendy /ping [gracz] // /ping [player] command view
+# 3. Wiadomość po przeładowaniu configu // Message displayed config reload
+# 4. Wiadomość wyświetlana po wyrzuceniu z serwera // Message displayed after kick from server
+
+your_ping_cmd: "&7Twój ping &8>> &c%ping%"
+player_ping_cmd: "&7Ping gracza %player% &8>> &c%ping%"
+reload_message: "%prefix% &7Przeładowano config!"
+kick_message: "%prefix% &7Maksymalny ping został przekroczony!"
+
+# Permisje // Permissions
+
+# 1. Uprawnienie do przeładowania configu // Config reload permission
+# 2. Uprawnienie do użycia /ping [gracz] // # Permission to use /ping [player]
+# 3. Permisja, dzięki której plugin nie będzie cię wyrzucać // Permission so the plugin will not kick you from server
+
+ping_permission: "hubism4_ping.use"
+reload_permission: "hubism4_ping.reload"
+bypass_permission: "hubism4_ping.bypass"
+
+# Błędy, Brak permisji // Errors, Non-permissions
+
+unknown_cmd: "&7Nie ma takiej komendy! Poprawne użycie: /ping [nick]"
+player_offline: "&7Podany gracz jest offline!"
+use_denied: "&7Nie masz permisji! &c(%permission_use%)"
+reload_denied: "&7Nie masz permisji! &c(%permission_reload%)"
